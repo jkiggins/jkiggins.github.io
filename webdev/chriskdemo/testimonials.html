@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Chris K's Tree Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito Sans', 'sans-serif'],
+                        heading: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .mobile-menu-open { display: block; }
+        .mobile-menu-closed { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-heading font-bold text-brand-700 tracking-tight">Chris K's Tree Service</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 font-medium hover:text-brand-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-600 font-medium hover:text-brand-600 transition">About</a>
+                    <a href="testimonials.html" class="text-brand-600 font-semibold border-b-2 border-brand-500 hover:text-brand-700 transition">Testimonials</a>
+                    <a href="contact.html" class="text-gray-600 font-medium hover:text-brand-600 transition">Contact</a>
+                    <a href="tel:5852082860" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2 rounded-full font-semibold shadow-md transition transform hover:-translate-y-0.5">Call Chris K</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500 rounded p-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu panel -->
+        <div class="md:hidden mobile-menu-closed bg-white border-t border-gray-100 shadow-lg absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-5 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-700 hover:bg-brand-50 hover:text-brand-700 block px-3 py-3 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:bg-brand-50 hover:text-brand-700 block px-3 py-3 rounded-md text-base font-medium">About</a>
+                <a href="testimonials.html" class="bg-brand-50 text-brand-700 block px-3 py-3 rounded-md text-base font-semibold">Testimonials</a>
+                <a href="contact.html" class="text-gray-700 hover:bg-brand-50 hover:text-brand-700 block px-3 py-3 rounded-md text-base font-medium">Contact</a>
+                <div class="mt-4 px-3">
+                    <a href="tel:5852082860" class="w-full flex items-center justify-center bg-brand-600 hover:bg-brand-700 text-white px-5 py-3 rounded-full font-semibold shadow-md">Call (585) 208-2860</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Page Header -->
+        <div class="bg-brand-100 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-heading font-extrabold tracking-tight text-brand-900 sm:text-5xl">
+                    What Our Customers Say
+                </h1>
+                <p class="mt-4 text-xl text-brand-700 font-medium">Real feedback from real people.</p>
+            </div>
+        </div>
+
+        <div class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start">
+                    <!-- Testimonial Image 1 -->
+                    <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 hover:shadow-xl transition transform hover:-translate-y-1 p-2">
+                        <img src="https://images.squarespace-cdn.com/content/v1/66d0dcfe284c6d63d067421f/4cfeb0ea-a926-45f3-80f8-1e897bfd6a3e/Testimonial+1.jpg" alt="Testimonial 1" class="w-full h-auto object-cover rounded-xl">
+                    </div>
+
+                    <!-- Testimonial Image 2 -->
+                    <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 hover:shadow-xl transition transform hover:-translate-y-1 p-2">
+                        <img src="https://images.squarespace-cdn.com/content/v1/66d0dcfe284c6d63d067421f/a890213a-ced2-4e58-a33f-72adf106b4fa/Testimonial+1+%281%29.jpg" alt="Testimonial 2" class="w-full h-auto object-cover rounded-xl">
+                    </div>
+
+                    <!-- Testimonial Image 3 -->
+                    <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 hover:shadow-xl transition transform hover:-translate-y-1 p-2">
+                        <img src="https://images.squarespace-cdn.com/content/v1/66d0dcfe284c6d63d067421f/30bd16f4-861b-49f0-920e-2c2292e79d3e/Testimonial+1+%282%29.jpg" alt="Testimonial 3" class="w-full h-auto object-cover rounded-xl">
+                    </div>
+                </div>
+
+                <div class="mt-20 text-center">
+                    <h3 class="text-2xl font-bold font-heading text-brand-900 mb-6">Need a free estimate?</h3>
+                    <a href="contact.html" class="inline-flex justify-center items-center px-8 py-4 border border-transparent rounded-full shadow-lg text-lg font-bold text-white bg-brand-600 hover:bg-brand-700 transition transform hover:-translate-y-1">
+                        Contact Us Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-6 md:mb-0">
+                <h3 class="text-2xl font-heading font-bold text-white tracking-tight leading-none">Chris K's Tree Service</h3>
+                <p class="text-brand-100 mt-2">Avon, NY • Livingston & Monroe Counties</p>
+            </div>
+            <div class="text-brand-100 flex flex-col md:items-end">
+                <a href="tel:5852082860" class="text-2xl font-bold font-heading hover:text-white transition">(585) 208-2860</a>
+                <p class="mt-2 text-sm">&copy; <span id="year"></span> Chris K's Tree Service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            if (menu.classList.contains('mobile-menu-closed')) {
+                menu.classList.remove('mobile-menu-closed');
+                menu.classList.add('mobile-menu-open');
+                btn.setAttribute('aria-expanded', 'true');
+            } else {
+                menu.classList.remove('mobile-menu-open');
+                menu.classList.add('mobile-menu-closed');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>

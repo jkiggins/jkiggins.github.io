@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris K's Tree Service | Tree Service in Livingston & Monroe County</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito Sans', 'sans-serif'],
+                        heading: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Mobile menu toggle classes */
+        .mobile-menu-open { display: block; }
+        .mobile-menu-closed { display: none; }
+    </style>
+</head>
+<body class="bg-brand-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-heading font-bold text-brand-700 tracking-tight">Chris K's Tree Service</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-brand-600 font-semibold border-b-2 border-brand-500 hover:text-brand-700 transition">Home</a>
+                    <a href="about.html" class="text-gray-600 font-medium hover:text-brand-600 transition">About</a>
+                    <a href="testimonials.html" class="text-gray-600 font-medium hover:text-brand-600 transition">Testimonials</a>
+                    <a href="contact.html" class="text-gray-600 font-medium hover:text-brand-600 transition">Contact</a>
+                    <a href="tel:5852082860" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2 rounded-full font-semibold shadow-md transition transform hover:-translate-y-0.5">Call Chris K</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500 rounded p-2" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu panel -->
+        <div class="md:hidden mobile-menu-closed bg-white border-t border-gray-100 shadow-lg absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-5 space-y-1 sm:px-3">
+                <a href="index.html" class="bg-brand-50 text-brand-700 block px-3 py-3 rounded-md text-base font-semibold">Home</a>
+                <a href="about.html" class="text-gray-700 hover:bg-brand-50 hover:text-brand-700 block px-3 py-3 rounded-md text-base font-medium">About</a>
+                <a href="testimonials.html" class="text-gray-700 hover:bg-brand-50 hover:text-brand-700 block px-3 py-3 rounded-md text-base font-medium">Testimonials</a>
+                <a href="contact.html" class="text-gray-700 hover:bg-brand-50 hover:text-brand-700 block px-3 py-3 rounded-md text-base font-medium">Contact</a>
+                <div class="mt-4 px-3">
+                    <a href="tel:5852082860" class="w-full flex items-center justify-center bg-brand-600 hover:bg-brand-700 text-white px-5 py-3 rounded-full font-semibold shadow-md">Call (585) 208-2860</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow">
+        <div class="relative bg-brand-900 overflow-hidden">
+            <div class="absolute inset-0">
+                <img class="w-full h-full object-cover opacity-40 mix-blend-multiply" src="https://images.squarespace-cdn.com/content/v1/66d0dcfe284c6d63d067421f/ae0ed4e4-d3c0-4da9-94d1-b08264618b4d/IMG_4020+%281%29.jpeg" alt="Tree Service Hero Image">
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 py-24 sm:py-32 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-heading font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                    Expert Tree Care in Livingston & Monroe County
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-xl text-brand-100">
+                    Reliable tree services in Avon, NY, including removal, trimming, and stump grinding. Fully insured with modern equipment. Call us for a free estimate today.
+                </p>
+                <div class="mt-10 flex justify-center gap-4 flex-col sm:flex-row">
+                    <a href="tel:5852082860" class="bg-brand-500 hover:bg-brand-400 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">Get a Free Estimate</a>
+                    <a href="about.html" class="bg-white hover:bg-gray-50 text-brand-900 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">About Our Team</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-base text-brand-600 font-bold tracking-wide uppercase">Our Services</h2>
+                    <p class="mt-2 text-3xl leading-8 font-heading font-extrabold tracking-tight text-brand-900 sm:text-4xl">
+                        Professional Tree Solutions
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Service 1 -->
+                    <div class="bg-brand-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-brand-100">
+                        <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-heading">Tree Removal</h3>
+                        <p class="text-gray-600 leading-relaxed">We remove trees safely and efficiently, using the right equipment and experience to protect your home and leave your property clean.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-brand-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-brand-100">
+                        <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-heading">Trimming</h3>
+                        <p class="text-gray-600 leading-relaxed">We provide professional tree trimming to improve structure, reduce excess weight, remove dead or overgrown limbs, and keep your trees healthy, safe, and well-shaped.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-brand-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-brand-100">
+                        <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-heading">Stump Grinding</h3>
+                        <p class="text-gray-600 leading-relaxed">We provide professional stump grinding to remove unwanted stumps below ground level, improve your yard's appearance, and create a smooth, usable space for new landscaping.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="py-20 bg-brand-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl leading-8 font-heading font-extrabold tracking-tight text-brand-900 sm:text-4xl">
+                        Frequently Asked Questions
+                    </h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 font-heading">Do you provide free estimates?</h3>
+                        <p class="mt-2 text-gray-600">Yes! We'll come out, assess your project, and give you a clear estimate before any work begins.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 font-heading">Do you handle emergency storm damage?</h3>
+                        <p class="mt-2 text-gray-600">Yes. We offer 24/7 emergency response for storm-damaged trees, including those on homes, cars, or other structures.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 font-heading">What areas do you serve?</h3>
+                        <p class="mt-2 text-gray-600">We are based in Avon, NY, and proudly serve Livingston and Monroe counties.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 font-heading">Can you handle very large or hard-to-reach trees?</h3>
+                        <p class="mt-2 text-gray-600">Yes — with our high-reach tracked bucket lift, we're fully equipped to handle very large or hard-to-reach trees, even in tight or difficult areas.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 font-heading">Will you clean up when the job is done?</h3>
+                        <p class="mt-2 text-gray-600">Yes. We haul away debris and leave your property as clean as possible after the work is complete.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-6 md:mb-0">
+                <h3 class="text-2xl font-heading font-bold text-white tracking-tight leading-none">Chris K's Tree Service</h3>
+                <p class="text-brand-100 mt-2">Avon, NY • Livingston & Monroe Counties</p>
+                <div class="mt-4 flex space-x-6 justify-center md:justify-start">
+                    <a href="https://www.facebook.com/profile.php?id=61562554097580" target="_blank" class="text-brand-100 hover:text-white transition">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://www.instagram.com/chris.ks.tree.service.nys/" target="_blank" class="text-brand-100 hover:text-white transition">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="text-brand-100 flex flex-col md:items-end">
+                <a href="tel:5852082860" class="text-2xl font-bold font-heading hover:text-white transition">(585) 208-2860</a>
+                <p class="mt-2 text-sm">&copy; <span id="year"></span> Chris K's Tree Service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            if (menu.classList.contains('mobile-menu-closed')) {
+                menu.classList.remove('mobile-menu-closed');
+                menu.classList.add('mobile-menu-open');
+                btn.setAttribute('aria-expanded', 'true');
+            } else {
+                menu.classList.remove('mobile-menu-open');
+                menu.classList.add('mobile-menu-closed');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
